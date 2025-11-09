@@ -1,0 +1,15 @@
+[Unit]
+Description=VPN Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/mm-b/Workspace/vpn/services/vpn-bot
+Environment=PYTHONPATH=/home/mm-b/Workspace/vpn/services/vpn-bot
+EnvironmentFile=/home/mm-b/Workspace/vpn/services/vpn-bot/.env
+ExecStart=/home/mm-b/Workspace/vpn/services/vpn-bot/.venv/bin/python -m app.main
+Restart=on-failure
+User=mm-b
+
+[Install]
+WantedBy=multi-user.target
