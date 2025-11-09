@@ -11,6 +11,8 @@ This repository contains:
 - `infra/terraform/` – Terraform module that provisions AWS networking + EC2.
 - `infra/scripts/` – Cloud-init bootstrap scripts invoked by Terraform.
 - `deploy/systemd/` – Sample systemd units for bare-metal or VM deployments without Docker.
+- `design/` – Architecture documents (e.g., multi-region VPN blueprint).
+- `docs/` – Operational guidelines and Q&A (`docs/guidelines.md`).
 - `TODO.md` – Roadmap and future enhancements.
 
 ## Quick Start (virtualenv)
